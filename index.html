@@ -21,12 +21,18 @@ page_name: Home
   </div>
 </div>
 
-<div class="entries"
-     {% for post in paginator.posts %}
-     <div class="entry">
-       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-       <div class="pubdate">{{ post.date | date:"%B %d, %Y" }}</div>
-       {{ post.content }}
-     </div>
-     {% endfor %}
+<div class="entries">
+  <div class="entry" id="get-involved">
+    <h2>get_involved.rb</h2>
+    <p>
+      Want to give a talk about Ruby or related technologies? Hate the way this website looks - want to fix it? Have feedback or suggestions? Interested in sponsoring us? We want to hear from you:
+    </p>
+  </div>
+  {% for post in paginator.posts %}
+    <div class="entry">
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <div class="pubdate">{{ post.date | date:"%B %d, %Y" }}</div>
+      {{ post.content }}
+    </div>
+  {% endfor %}
 </div>

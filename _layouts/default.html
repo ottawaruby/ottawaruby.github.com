@@ -2,16 +2,23 @@
 <html>
   <head>
     <title>{{ page.title }}</title>
+
+    <head>
+      <link href="/stylesheets/application.css" media="screen, projection" rel="stylesheet" type="text/css" />
+      <link href="/stylesheets/text.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+      <!--[if lt IE 7]>
+        <link href="/stylesheets/ie6.css" media="screen, projection" rel="stylesheet" type="text/css" />
+      <![endif]-->
+    </head>
   </head>
   <body>
     <div class="header">
-      <h1>{{ page.title }}</h1>
+      <img alt="Ottawa Ruby" src="/images/logo.png">
     </div>
 
     <div class="wrapper">
-      <div id="content">
-	{{ content }}
-      </div>
+      {{ content }}
     </div>
 
     <div class="footer">

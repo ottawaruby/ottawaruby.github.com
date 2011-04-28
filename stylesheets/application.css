@@ -1,0 +1,123 @@
+/* 960 Grid System ~ Core CSS.
+ * Learn more ~ http://960.gs/
+ * *
+ * Licensed under GPL and MIT. */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: "" "";
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+}
+
+a img {
+  border: none;
+}
+
+body {
+  background-color: #FFE8E8;
+}
+
+.header, .wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+
+.sidebar, .entries {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.sidebar {
+  width: 460px;
+}
+
+.entries {
+  width: 460px;
+}
+.entries .entry {
+  margin-bottom: 10px;
+}
+
+#get-involved {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  border: 3px solid #993333;
+  padding: 5px;
+  background-color: #FFEDED;
+}
+#get-involved h2 {
+  color: #993333;
+  font-weight: bold;
+}
+
+.two-column {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+.two-column #header,
+.two-column #footer,
+.two-column #sidebar,
+.two-column #main-content {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.two-column #header, .two-column #footer {
+  width: 1420px;
+}
+.two-column #sidebar {
+  width: 460px;
+}
+.two-column #main-content {
+  width: 940px;
+}
