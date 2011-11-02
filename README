@@ -1,9 +1,0 @@
-Ottawa Group of Ruby Enthusiasts
-
-To hack on this site you will need...
-1. jekyll (gem install jekyll)
-2. compass (gem install compass)
-3. compass-960-plugin (gem install compass-960-plugin)
-4. fancy-buttons (gem install fancy-buttons)
-
-We're using SCSS so you'll want to edit those files if you're doing any styling, not the css files. You can run `compass watch .` and it will compile the css for you as the scss files change.
