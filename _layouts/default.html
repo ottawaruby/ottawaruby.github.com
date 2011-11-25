@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
   <link href="/stylesheets/application.css" media="screen, projection" rel="stylesheet" type="text/css" />
-  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+  <script src="/js/modernizr-2.0.6.min.js"></script>
 </head>
 
 <body>
@@ -36,7 +36,6 @@
 			<div class="fb-like-box" data-href="http://www.facebook.com/ottawaruby" data-width="280" data-height="300" data-show-faces="true" data-stream="true" data-header="false"></div>
 		</div>
 		<div class="widget left">
-		<iframe width="280" height="300" src="http://meetu.ps/5K7zb" frameborder="0"></iframe>
 		</div>
 		<div class="widget">
 		
@@ -49,10 +48,13 @@
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
 
 
-  <!-- scripts concatenated and minified via ant build script-->
-  <script defer src="js/plugins.js"></script>
-  <script defer src="js/script.js"></script>
-  <!-- end scripts-->
+<script>
+  $(document).ready(function(){
+	//Center all image wrapper paragraphs
+//	$(".entry img").parent().parent('p').css('text-align','center');
+		$(".entry img").parent('p').css('text-align','center');
+  }); 
+</script>
 
 
   <script> // Change UA-XXXXX-X to be your site's ID

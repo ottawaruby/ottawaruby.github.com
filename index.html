@@ -5,32 +5,51 @@ page_name: Home
 ---
 
 <div id="intro" class="clearfix">
-  <div class="intro-section left">
-    <h1>What is this?</h1>
-    <p>
-      We are a group of enthusiasts that get together once a month to, present, and talk about the Ruby programming language.
-    </p>
-  </div>
-  <div class="intro-section right">
-    <h1>What is Ruby?</h1>
-    <p>
-      <a href="http://www.ruby-lang.org/en/">Ruby</a> is "a dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write".
-    </p>
-  </div>
+	<div class="intro-section left">
+		<h1>What is this?</h1>
+		<p>
+			We are a group of enthusiasts that get together once a month to, present, and talk about the Ruby programming language.
+		</p>
+	</div>
+	<div class="intro-section right">
+		<h1>What is Ruby?</h1>
+		<p>
+			<a href="http://www.ruby-lang.org/en/">Ruby</a> is "a dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write".
+		</p>
+	</div>
+</div>
+
+<div id="next-event">
+	<h1 class="big">Next Event:</h1>
+	<h2>OGRE - The Ottawa Group of Ruby Enthusiasts Monthly Meetup</h2>
+	<div class="clearfix">
+		<div class="col">
+			<h1>When?</h1>
+			<p>Tues. Dec 27 6:30pm</p>
+		</div>
+		<div class="col">
+			<h1>Where?</h1>
+			<p>Shopify Office <a href="/">(map)</a></p>
+		</div>
+		<div class="col last">
+			<a class="punch">RSVP!</a>
+
+		</div>
+	</div>
 </div>
 
 <div class="entries">
-  <div class="entry" id="get-involved">
-    <h2>get_involved.rb</h2>
-    <p>
-      Want to give a talk about Ruby or related technologies? Hate the way this website looks - want to fix it? Have feedback or suggestions? Interested in sponsoring us? We want to hear from you:
-    </p>
-  </div>
-  {% for post in paginator.posts %}
-    <div class="entry">
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      <div class="pubdate">{{ post.date | date:"%B %d, %Y" }}</div>
-      {{ post.content }}
-    </div>
-  {% endfor %}
+	<!-- <div class="entry" id="get-involved">
+	<h2>get_involved.rb</h2>
+	<p>
+	Want to give a talk about Ruby or related technologies? Hate the way this website looks - want to fix it? Have feedback or suggestions? Interested in sponsoring us? We want to hear from you:
+	</p>
+	</div> -->
+	{% for post in paginator.posts %}
+	<div class="entry">
+		<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+		<div class="pubdate">{{ post.date | date:"%B %d, %Y" }}</div>
+		{{ post.content }}
+	</div>
+	{% endfor %}
 </div>
