@@ -4,52 +4,50 @@ title: Ottawa Ruby
 page_name: Home
 ---
 
-<div id="intro" class="clearfix">
+<section id="intro" class="clearfix">
 	<div class="intro-section left">
-		<h1>What is this?</h1>
+		<h2>What is this?</h2>
 		<p>
 			We are a group of enthusiasts that get together once a month to, present, and talk about the Ruby programming language.
 		</p>
 	</div>
 	<div class="intro-section right">
-		<h1>What is Ruby?</h1>
+		<h2>What is Ruby?</h2>
 		<p>
 			<a href="http://www.ruby-lang.org/en/">Ruby</a> is "a dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write".
 		</p>
 	</div>
-</div>
+</section>
 
-<div id="next-event">
-	<h1 class="big">Next Event:</h1>
-	<h2>OGRE - The Ottawa Group of Ruby Enthusiasts Monthly Meetup</h2>
-	<div class="clearfix">
-		<div class="col">
-			<h1>When?</h1>
-			<p>Tues. Dec 27 6:30pm</p>
-		</div>
-		<div class="col">
-			<h1>Where?</h1>
-			<p>Shopify Office <a href="/">(map)</a></p>
-		</div>
-		<div class="col last">
-			<a class="punch">RSVP!</a>
+<section id="next-event">
+		<h2>Our Next Event...</h2>
+		<h1>OGRE - The Ottawa Group of Ruby Enthusiasts Monthly Meetup</h1>
+		<h3>Tues. Dec 27 6:30pm @ jadedPixel Technologies/Shopify (map)</h3>
+		<span>come join us :)</span><a href="#" id="rsvp">RSVP</a>
+</section>
 
-		</div>
-	</div>
-</div>
-
-<div class="entries">
+<section id="posts" class="clearfix">
 	<!-- <div class="entry" id="get-involved">
 	<h2>get_involved.rb</h2>
 	<p>
 	Want to give a talk about Ruby or related technologies? Hate the way this website looks - want to fix it? Have feedback or suggestions? Interested in sponsoring us? We want to hear from you:
 	</p>
 	</div> -->
-	{% for post in paginator.posts %}
+	<div id="sidebar" class="left">
+		<h2>Follow us</h2>
+		<div class="fb-like-box" data-href="http://www.facebook.com/ottawaruby" data-width="300" data-height="300" data-show-faces="true" data-stream="true" data-header="false" >
+			
+		</div>
+		
+	</div>
+	<div id="entries" class="right">
+		<h2>Latest news</h2>
+	{% for post in paginator.posts | limit:1 %}
 	<div class="entry">
 		<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 		<div class="pubdate">{{ post.date | date:"%B %d, %Y" }}</div>
 		{{ post.content }}
 	</div>
 	{% endfor %}
-</div>
+	</div>
+</section>
