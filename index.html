@@ -22,8 +22,8 @@ page_name: Home
 <section id="next-event">
 		<h2>Our Next Event...</h2>
 		<h1>OGRE - The Ottawa Group of Ruby Enthusiasts Monthly Meetup</h1>
-		<h3>Tues. Dec 27 6:30pm @ jadedPixel Technologies/Shopify (map)</h3>
-		<span>come join us :)</span><a href="#" id="rsvp">RSVP</a>
+		<h3>Tues. Dec 27 6:30pm @ jadedPixel Technologies/Shopify <a href="#">(map)</a></h3>
+		<span>come join us :)</span><a href="#" class="big-button">RSVP</a>
 </section>
 
 <section id="posts" class="clearfix">
@@ -34,20 +34,27 @@ page_name: Home
 	</p>
 	</div> -->
 	<div id="sidebar" class="left">
-		<h2>Follow us</h2>
-		<div class="fb-like-box" data-href="http://www.facebook.com/ottawaruby" data-width="300" data-height="300" data-show-faces="true" data-stream="true" data-header="false" >
+		<h2>Follow us:</h2>
+		<div class="fb-like-box" data-href="http://www.facebook.com/ottawaruby" data-width="240" data-height="300" data-show-faces="true" data-stream="true" data-header="false" >
 			
 		</div>
 		
 	</div>
 	<div id="entries" class="right">
-		<h2>Latest news</h2>
+		<h2>Latest news:</h2>
 	{% for post in paginator.posts | limit:1 %}
 	<div class="entry">
-		<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-		<div class="pubdate">{{ post.date | date:"%B %d, %Y" }}</div>
+		<div class="entry-info clearfix">
+			<h3 class="left"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+			<div class="pubdate right">{{ post.date | date:"%B %d, %Y" }}</div>
+		</div>
 		{{ post.content }}
+		<p class="more">
+		<a href="#" class="big-button">Older Posts &rarr;</a>
+		</p>
+		
 	</div>
+	
 	{% endfor %}
 	</div>
 </section>

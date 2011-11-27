@@ -1,73 +1,71 @@
 <!DOCTYPE html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title>{{ page.title }}</title>
-  <meta name="description" content="Ottawa Ruby Official Website">
-  <meta name="author" content="Tetsuro Takara">
+	<title>{{ page.title }}</title>
+	<meta name="description" content="Ottawa Ruby Official Website">
+	<meta name="author" content="Tetsuro Takara">
 
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <link href="/stylesheets/application.css" media="screen, projection" rel="stylesheet" type="text/css" />
-  <script src="/js/modernizr-2.0.6.min.js"></script>
+	<link href="/stylesheets/application.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<script src="/js/modernizr-2.0.6.min.js"></script>
 </head>
 
 <body>
 	<div id="fb-root"></div>
 	<script>(function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) {return;}
-	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
-	
-  <div id="container">
-    <header>
-		<a href="/"><img alt="Ottawa Ruby" src="/images/logo.png"></a>     
-    </header>
-    <div id="main" role="main">
-		{{ content }}
-    </div>
-    <footer class="clearfix">
-		<h1>Follow us:</h1>
-		<div class="widget left">
-		</div>
-		<div class="widget left">
-		</div>
-		<div class="widget">
-		
-		</div>		
-    </footer>
-  </div> <!--! end of #container -->
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
+		<div id="container">
+			<header>
+				<a href="/"><img alt="Ottawa Ruby" src="/images/logo.png"></a>     
+			</header>
+			<div id="main" role="main">
+				{{ content }}
+			</div>
+			<footer class="clearfix">
+				<div class="left">
+					&copy; 2009-{{ 'now' | date: "%Y" }} Ottawa Ruby
+				</div>
+				<div class="right">
+					by <a href="http://www.tetchi.ca" target="_blank"><img src="/images/tetchi.png"/></a>
+				</div>
+			</footer>
+		</div> <!--! end of #container -->
 
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
 
 
-<script>
-  $(document).ready(function(){
-	//Center all image wrapper paragraphs
-//	$(".entry img").parent().parent('p').css('text-align','center');
-		$(".entry img").parent('p').css('text-align','center');
-  }); 
-</script>
+		<script>
+		$(document).ready(function(){
+			//Center all image wrapper paragraphs
+			//	$(".entry img").parent().parent('p').css('text-align','center');
+			$(".entry img").parent('p').css('text-align','center');
+		}); 
+		</script>
 
 
-  <script> // Change UA-XXXXX-X to be your site's ID
-    window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
-    Modernizr.load({
-      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
-    });
-  </script>
+		<script> // Change UA-XXXXX-X to be your site's ID
+		window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+		Modernizr.load({
+			load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+		});
+		</script>
 
 
-  <!--[if lt IE 7 ]>
-    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-  <![endif]-->
-  
-</body>
-</html>
+		<!--[if lt IE 7 ]>
+		<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+		<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+		<![endif]-->
+
+	</body>
+	</html>
