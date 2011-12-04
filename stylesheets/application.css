@@ -89,11 +89,11 @@ td { vertical-align: top; }
 body{background:#ffe8e8 url(/images/bg.png);  font-family:"Lucida Grande", "Lucida Sans Unicode"; text-shadow: #fff4f4 1px 1px 0;}
 a{color:#d6546c;}
 a:hover{color:#9a2f43;}
-h1, h2, h3, p{margin:0;} /* Reset */
-header{padding:30px 0 30px 0; border-bottom:1px solid #efcdcd;}
+h1, h2, h3,h4, p{margin:0;} /* Reset */
+header{padding:70px 0 30px 0; border-bottom:1px solid #efcdcd;}
 section{padding:40px 0; border-bottom:1px solid #efcdcd;}
 h2,h3{color:#963333;}
-h2{font: 20px 'MolotRegular', Arial, sans-serif;letter-spacing: 0; margin-bottom:15px;}
+h2{font: 1.4em 'MolotRegular', Arial, sans-serif;letter-spacing: 0; margin-bottom:15px;}
 p{line-height:1.7em; margin-bottom:1em;}
 .left{float:left;}
 .right{float:right;}
@@ -107,7 +107,7 @@ header{text-align:center; }
 #header-info{width:64.606060606%; float:right; padding-top:30px;}
 #header-info h2{font: 64px 'MolotRegular', Arial, sans-serif; text-align:justify;  color: #963333; text-shadow: #e8c6c6 3px 3px 0; margin:0;}
 #header-info h3{color:#000; font-size:0.9em;}
-#header-info #rsvp{text-align:right; margin-top:13px;}
+#header-info #rsvp{text-align:right; margin-top:20px;}
 
 a.big-button{display:inline-block; background:#ed5c5c; padding:5px 30px; color:#fff; font: 36px 'MolotRegular', Arial, sans-serif; text-decoration:none; 
 			text-shadow:none;
@@ -116,6 +116,7 @@ a.big-button{display:inline-block; background:#ed5c5c; padding:5px 30px; color:#
 			-moz-box-shadow: 3px 3px #f0bebe;
 			-webkit-box-shadow: 3px 3px #f0bebe;
 			box-shadow: 3px 3px #f0bebe;
+			outline:none;
 			}
 a.big-button:hover{background: #ff7f7f;}
 a.big-button:active{			-moz-box-shadow: 2px 2px #f0bebe;
@@ -123,8 +124,10 @@ a.big-button:active{			-moz-box-shadow: 2px 2px #f0bebe;
 							box-shadow: 2px 2px #f0bebe;
 	}
 
-#sidebar{width:200px}
-#entries{width:600px;}
+#sidebar{width:200px; font-size:0.8em;}
+#sidebar h4{border-bottom:1px solid  #efcdcd;}
+#sidebar .social{margin-bottom:30px;}
+#entries{width:550px;}
 .entry-info{margin-bottom:1em; border-bottom:1px solid #efcdcd;}
 .entry h3 a{color:#000; text-decoration:none;}
 .entry h3 a:hover{color:#666;}

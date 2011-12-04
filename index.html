@@ -4,28 +4,10 @@ title: Ottawa Ruby
 page_name: Home
 ---
 
-
-<!-- <section id="next-event">
-		<h2>Our Next Event...</h2>
-		<h1>Ottawa Ruby Monthly Meetup</h1>
-		<h3>Tues. Dec 27 6:30pm @ jadedPixel Technologies/Shopify <a href="#">(map)</a></h3>
-		<span>come join us :)</span><a href="#" class="big-button">RSVP</a>
-</section> -->
-
 <section id="posts" class="clearfix">
-	<!-- <div class="entry" id="get-involved">
-	<h2>get_involved.rb</h2>
-	<p>
-	Want to give a talk about Ruby or related technologies? Hate the way this website looks - want to fix it? Have feedback or suggestions? Interested in sponsoring us? We want to hear from you:
-	</p>
-	</div> -->
-	<div id="sidebar" class="left">
-		<h2>Follow us:</h2>
-	
-		
-	</div>
-	<div id="entries" class="right">
-		<h2>Latest news:</h2>
+
+
+	<div id="entries" class="left">
 	{% for post in paginator.posts | limit:1 %}
 	<div class="entry">
 		<div class="entry-info clearfix">
@@ -34,11 +16,29 @@ page_name: Home
 		</div>
 		{{ post.content }}
 		<p class="more">
-		<a href="#" class="big-button">Older Posts &rarr;</a>
+		<a href="#">Older Posts &rarr;</a>
 		</p>
 		
 	</div>
 	
 	{% endfor %}
+	</div>
+	
+	<div id="sidebar" class="right">
+		<div class="social">
+			<h4>Join Ottawa Ruby!</h4>
+			<p>To keep up-to-date with the latest and reach out to fellow Ottawa Rubyists, join us on Facebook!</p>
+			<a href=""></a>
+		</div>
+		<div class="social">
+			<h4>Come hang out!</h4>
+			<p>Join us on Meetup</p>
+			<a href=""></a>
+		</div>
+		<div class="social">
+			<h4>Check out our events!</h4>
+			<p>You can also subscribe to our calendar feed to make sure you don't miss out on any events!</p>
+			<a href=""></a>
+		</div>
 	</div>
 </section>
