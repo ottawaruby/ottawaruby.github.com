@@ -1,91 +1,106 @@
 <!DOCTYPE html>
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title>{{ page.title }}</title>
-	<meta name="description" content="Ottawa Ruby Official Website">
-	<meta name="author" content="Tetsuro Takara">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="Ottawa Ruby Official Website">
+  <meta name="author" content="Tetsuro Takara">
 
-	<meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 
-	<link href="/stylesheets/application.css" media="screen, projection" rel="stylesheet" type="text/css" />
-	<script src="/js/modernizr-2.0.6.min.js"></script>
+  <link href="/stylesheets/application.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <script src="/js/modernizr-2.0.6.min.js"></script>
 </head>
 
 <body>
-	  <div id="images">
+  <div id="images">
 
-	</div>
-	<div id="fb-root"></div>
-		<div id="container">
-			<header class="clearfix">
-				<div id="logo">
-					<a href="/"><img alt="Ottawa Ruby" src="/images/logo.png"></a>     
-				</div>
-				<div id="header-info">
-					<h1><img src="/images/ottawa_ruby.png" /></h1>
-					<h2>Monthly Meetup</h2>
-					<h3>Tues. Dec 27 6:30pm @ jadedPixel Technologies/Shopify <a href="#">(map)</a></h3>
-					<div id="rsvp"><a href="#" class="big-button">RSVP!</a></div>					
-				</div>
-			</header>
-			<div id="main" role="main">
-				{{ content }}
-			</div>
-
-			
-			<section id="intro" class="clearfix">
-				<div class="intro-section left">
-					<h2>What is this?</h2>
-					<p>
-						We are a group of enthusiasts that get together once a month to, present, and talk about the Ruby programming language.
-					</p>
-				</div>
-				<div class="intro-section right">
-					<h2>What is Ruby?</h2>
-					<p>
-						<a href="http://www.ruby-lang.org/en/">Ruby</a> is "a dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write".
-					</p>
-				</div>
-			</section>
-
-			<footer class="clearfix">
-				<div class="left">
-					&copy; 2009-{{ 'now' | date: "%Y" }} Ottawa Ruby
-				</div>
-				<div class="right">
-					by <a href="http://www.tetchi.ca" target="_blank"><img src="/images/tetchi.png"/></a>
-				</div>
-			</footer>
-		</div> <!--! end of #container -->
+  </div>
+  <div id="fb-root"></div>
+  <div id="container">
+    <header class="clearfix">
+      <div id="logo">
+        <a href="/"><img alt="Ottawa Ruby" src="/images/logo.png"></a>     
+      </div>
+      <div id="header-info">
+        <h1><img src="/images/ottawa_ruby.png" /></h1>
+        <h2>Monthly Meetup</h2>
+        <h3>Tues. Dec 27 6:30pm @ jadedPixel Technologies/Shopify <a href="#">(map)</a></h3>
+        <div id="rsvp"><a href="#" class="big-button">RSVP!</a></div>         
+      </div>
+    </header>
+    <div id="main" role="main">
+      {{ content }}
+    </div>
 
 
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-		<script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+    <section id="intro" class="clearfix">
+      <div class="intro-section left">
+        <h2>What is this?</h2>
+        <p>
+          We are a group of enthusiasts that get together once a month to, present, and talk about the Ruby programming language.
+        </p>
+      </div>
+      <div class="intro-section right">
+        <h2>What is Ruby?</h2>
+        <p>
+          <a href="http://www.ruby-lang.org/en/">Ruby</a> is "a dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write".
+        </p>
+      </div>
+    </section>
+
+    <footer class="clearfix">
+      <div class="left">
+        &copy; 2009-{{ 'now' | date: "%Y" }} Ottawa Ruby
+      </div>
+      <div class="right">
+        by <a href="http://www.tetchi.ca" target="_blank"><img src="/images/tetchi.png"/></a>
+      </div>
+    </footer>
+    <div id="images">
+
+    </div>
 
 
-		<script>
-		$(document).ready(function(){
-			//Center all image wrapper paragraphs
-			//	$(".entry img").parent().parent('p').css('text-align','center');
-			
-			
-			$(".entry img").parent('p').css('text-align','center');
-			var url = "https://api.meetup.com/2/events?key=7f3124d78666958d1015802b334d1c&sign=true&group_id=1523801&page=1";
-			$.getJSON(url, function(json) {
-			   alert("JSON Data:");
-			 });
-	
-		}); 
-		</script>
+  </div> <!--! end of #container -->
 
 
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
 
-		<!--[if lt IE 7 ]>
-		<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-		<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-		<![endif]-->
 
-	</body>
-	</html>
+  <script>
+  $(document).ready(function(){
+    //Center all image wrapper paragraphs
+    //  $(".entry img").parent().parent('p').css('text-align','center');
+
+
+    $(".entry img").parent('p').css('text-align','center');
+    var url = "http://api.meetup.com/2/events?key=7f3124d78666958d1015802b334d1c&sign=true&group_id=1523801&page=1&callback=?";
+    
+    $.getJSON(url,{},function(data) {
+        alert(data.results[0].event_url);
+      });
+    
+
+  }); 
+  
+//   
+//   function awesome(data){
+// //    alert(data.results[0].status);
+//   }
+  
+  </script>
+
+<!-- <script type="text/javascript" charset="utf-8" src="http://api.meetup.com/2/events?key=7f3124d78666958d1015802b334d1c&sign=true&group_id=1523801&page=1&callback=tetsisawesome">
+</script>  -->
+
+
+  <!--[if lt IE 7 ]>
+  <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+  <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+
+</body>
+</html>

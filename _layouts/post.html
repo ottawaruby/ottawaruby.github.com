@@ -4,8 +4,23 @@ page_name: blog
 ---
 
 <section id="posts" class="clearfix">
-	
-	<div id="sidebar" class="left">
+
+
+
+
+	<div id="entries">
+
+
+		<div class="entry">
+			<div class="entry-info clearfix">
+				<h3 class="left">{{ page.title }}</h3>
+				<div class="pubdate right">{{ page.date | date:"%B %d, %Y" }}</div>
+			</div>
+			{{ content }}
+		</div>
+	</div>
+
+	<div id="sidebar">
 		<div class="social">
 			<h4>Join Ottawa Ruby!</h4>
 			<p>Join us on Meetup</p>
@@ -28,18 +43,5 @@ page_name: blog
 			<a href=""></a>
 		</div>
 	</div>
-
-
-	<div id="entries" class="right">
-
-
-<div class="entry">
-	<div class="entry-info clearfix">
-		<h3 class="left">{{ page.title }}</h3>
-		<div class="pubdate right">{{ page.date | date:"%B %d, %Y" }}</div>
-	</div>
-  {{ content }}
-</div>
-</div>
 
 </section>

@@ -6,9 +6,29 @@ page_name: Home
 
 <section id="posts" class="clearfix">
 
+	
+	
+	<div id="entries">
+	{% for post in paginator.posts | limit:1 %}
+	<div class="entry">
+		<div class="entry-info clearfix">
+			<h3 class="left"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+			<div class="pubdate right">{{ post.date | date:"%B %d, %Y" }}</div>
+		</div>
+		{{ post.content }}
+		<p class="more">
+		<a href="#" class="small-button">View Older Posts &rarr;</a>
+		</p>
+		
+	</div>
+	
+	{% endfor %}
+	</div>
+	
+	
 
 	
-	<div id="sidebar" class="left">
+	<div id="sidebar">
 		<div class="social">
 			<h4>Join Ottawa Ruby!</h4>
 			<p>Join us on Meetup</p>
@@ -31,23 +51,6 @@ page_name: Home
 			<a href=""></a>
 		</div>
 	</div>
+
 	
-	
-	
-	<div id="entries" class="right">
-	{% for post in paginator.posts | limit:1 %}
-	<div class="entry">
-		<div class="entry-info clearfix">
-			<h3 class="left"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-			<div class="pubdate right">{{ post.date | date:"%B %d, %Y" }}</div>
-		</div>
-		{{ post.content }}
-		<p class="more">
-		<a href="#" class="small-button">View Older Posts &rarr;</a>
-		</p>
-		
-	</div>
-	
-	{% endfor %}
-	</div>
 </section>
