@@ -2,7 +2,44 @@
 layout: default
 page_name: blog
 ---
-<h2>{{page.title}}</h2>
+
+<section id="posts" class="clearfix">
+	
+	<div id="sidebar" class="left">
+		<div class="social">
+			<h4>Join Ottawa Ruby!</h4>
+			<p>Join us on Meetup</p>
+			<a href=""></a>
+		</div>
+		<div class="social">
+			<h4>Join us on Facebook!</h4>
+
+			<p>To keep up-to-date with the latest and reach out to fellow Ottawa Rubyists, join us on Facebook!</p>
+			<a href=""></a>
+		</div>
+		<div class="social">
+			<h4>Check out our events!</h4>
+			<p>Text for Google Group here.</p>
+			<a href=""></a>
+		</div>
+		<div class="social">
+			<h4>Check out our events!</h4>
+			<p>You can also subscribe to our calendar feed to make sure you don't miss out on any events!</p>
+			<a href=""></a>
+		</div>
+	</div>
+
+
+	<div id="entries" class="right">
+
+
 <div class="entry">
+	<div class="entry-info clearfix">
+		<h3 class="left">{{ page.title }}</h3>
+		<div class="pubdate right">{{ page.date | date:"%B %d, %Y" }}</div>
+	</div>
   {{ content }}
 </div>
+</div>
+
+</section>

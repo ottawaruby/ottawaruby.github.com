@@ -86,7 +86,7 @@ td { vertical-align: top; }
 /* ================== */
 
 
-body{background:#ffe8e8 url(/images/bg.png);  font-family:"Lucida Grande", "Lucida Sans Unicode"; text-shadow: #fff4f4 1px 1px 0;}
+body{background:#ffe8e8 url(/images/bg.png);  font-family:"Lucida Grande", "Lucida Sans Unicode"; text-shadow: #fff4f4 1px 1px 0; font-size:0.85em;}
 a{color:#d6546c;}
 a:hover{color:#9a2f43;}
 h1, h2, h3,h4, p{margin:0;} /* Reset */
@@ -106,7 +106,7 @@ header{text-align:center; }
 #logo{width:27.03030303%; float:left;}
 #header-info{width:64.606060606%; float:right; padding-top:30px;}
 #header-info h2{font: 64px 'MolotRegular', Arial, sans-serif; text-align:justify;  color: #963333; text-shadow: #e8c6c6 3px 3px 0; margin:0;}
-#header-info h3{color:#000; font-size:0.9em;}
+#header-info h3{color:#000; font-size:1.2em;}
 #header-info #rsvp{text-align:right; margin-top:20px;}
 
 a.big-button{display:inline-block; background:#ed5c5c; padding:5px 30px; color:#fff; font: 36px 'MolotRegular', Arial, sans-serif; text-decoration:none; 
@@ -118,19 +118,28 @@ a.big-button{display:inline-block; background:#ed5c5c; padding:5px 30px; color:#
 			box-shadow: 3px 3px #f0bebe;
 			outline:none;
 			}
-a.big-button:hover{background: #ff7f7f;}
-a.big-button:active{			-moz-box-shadow: 2px 2px #f0bebe;
+a.big-button:hover,a.small-button:hover{background: #ff7f7f;}
+a.big-button:active, a.small-button:active{			-moz-box-shadow: 2px 2px #f0bebe;
 							-webkit-box-shadow: 2px 2px #f0bebe;
 							box-shadow: 2px 2px #f0bebe;
 	}
+a.small-button{
+	display:inline-block; background:#ed5c5c;  padding:5px 15px; color:#fff; text-decoration:none; 
+				text-shadow:none;
+				-moz-border-radius: 10px;
+				border-radius: 10px;
+				-moz-box-shadow: 3px 3px #f0bebe;
+				-webkit-box-shadow: 3px 3px #f0bebe;
+				box-shadow: 3px 3px #f0bebe;
+				outline:none;
+}
 
-#sidebar{width:200px; font-size:0.8em;}
-#sidebar h4{border-bottom:1px solid  #efcdcd;}
+#sidebar{width:24.2424242424%; font-size:0.95em;}
+#sidebar h4{border-bottom:1px solid  #efcdcd; margin-bottom:0.5em;}
 #sidebar .social{margin-bottom:30px;}
-#entries{width:550px;}
+#entries{width:64.6061%;}
 .entry-info{margin-bottom:1em; border-bottom:1px solid #efcdcd;}
-.entry h3 a{color:#000; text-decoration:none;}
-.entry h3 a:hover{color:#666;}
+.entry h3 a{ text-decoration:none;}
 .pubdate{font-size:10px; padding-top:4px;}
 
 

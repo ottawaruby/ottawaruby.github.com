@@ -14,6 +14,9 @@
 </head>
 
 <body>
+	  <div id="images">
+
+	</div>
 	<div id="fb-root"></div>
 		<div id="container">
 			<header class="clearfix">
@@ -66,17 +69,17 @@
 		$(document).ready(function(){
 			//Center all image wrapper paragraphs
 			//	$(".entry img").parent().parent('p').css('text-align','center');
+			
+			
 			$(".entry img").parent('p').css('text-align','center');
+			var url = "https://api.meetup.com/2/events?key=7f3124d78666958d1015802b334d1c&sign=true&group_id=1523801&page=1";
+			$.getJSON(url, function(json) {
+			   alert("JSON Data:");
+			 });
+	
 		}); 
 		</script>
 
-
-		<script> // Change UA-XXXXX-X to be your site's ID
-		window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
-		Modernizr.load({
-			load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
-		});
-		</script>
 
 
 		<!--[if lt IE 7 ]>
