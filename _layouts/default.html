@@ -68,15 +68,16 @@
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+  <script src="/js/jquery.fittext.js"></script>
 
 
   <script>
   $(document).ready(function(){
-    //Center all image wrapper paragraphs
-    //  $(".entry img").parent().parent('p').css('text-align','center');
 
-
+    //Just centering some images, no biggy
     $(".entry img").parent('p').css('text-align','center');
+
+    
     var url = "http://api.meetup.com/2/events?key=7f3124d78666958d1015802b334d1c&sign=true&group_id=1523801&page=1&callback=?";
     
     $.getJSON(url,{},function(data) {
