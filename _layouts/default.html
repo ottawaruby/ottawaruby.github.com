@@ -27,7 +27,7 @@
         <h1><img src="/images/ottawa_ruby.png" /></h1>
         <h2></h2>
         <h3><span id="event-date"></span> @ <span id="event-venue"></span></h3>
-        <div id="rsvp"><a href="#" class="big-button">RSVP!</a></div>         
+        <div id="rsvp"><a href="#" class="big-button" target="_blank">RSVP!</a></div>         
       </div>
     </header>
     <div id="main" role="main">
@@ -80,14 +80,20 @@
     var url = "http://api.meetup.com/2/events?key=7f3124d78666958d1015802b334d1c&sign=true&group_id=1523801&page=1&callback=?";
     
     $.getJSON(url,{},function(data) {
+      
         var event_name = data.results[0].name;
         var event_url= data.results[0].event_url;
         var event_venue = data.results[0].venue.name;
         var event_time = data.results[0].time;
+        var event_date = new Date(event_time).toUTCString();
+        
+        
         $("#header-info h2").html(event_name);
-        $("#event-date").html(event_time);
+        $("#event-date").html(event_date);
         $("#event-venue").html(event_venue);
         $("#rsvp a").attr("href",event_url);
+        
+        
       });
       
     

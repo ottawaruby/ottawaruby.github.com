@@ -139,7 +139,9 @@ a.small-button{
 #sidebar .social{margin-bottom:30px;}
 #entries{width:64.6061%; float:right;}
 .entry-info{margin-bottom:1em; border-bottom:1px solid #efcdcd;}
-.entry h3 a{ text-decoration:none;}
+.entry-info h3{float:left;}
+.pub-date{float:right;}
+.entry-info h3 a{ text-decoration:none;}
 .pubdate{font-size:10px; padding-top:4px;}
 
 
@@ -174,28 +176,31 @@ footer{padding-top:10px; font-size:10px; 	}
 
 /* ==|== media queries ====================================================== */
 
+
+
 @media screen and (max-width: 825px) {
 	body{padding:30px;}
 	header{padding-top:0;}
 	#logo,#header-info, #sidebar, #entries,.intro-section{float:none; width:100%;}
 	#logo, #header-info, #header-info h2{text-align:center;}
-	#header-info img{width:400px; height:auto;}
-	#header-info h2{font-size:3em;}
 	#header-info #rsvp{text-align:center;}
+	#entries{border-bottom:1px solid #efcdcd; padding-bottom:40px; margin-bottom:40px; }
+	#intro div:first-child{margin-bottom:30px;}
+	#header-info h2{margin:20px auto;}
 }
-
 
 @media only screen and (min-width: 481px) and (max-width:825px){
-		#header-info h2{font-size:3.5em;}
-}
+		#header-info img{width:400px; height:auto;}
+		#header-info h2{font-size:3em; width:400px;}
 
+		
+}
 
 @media only screen and (max-width: 480px) {
 	#header-info img{width:300px; height:auto;}
-
-	#header-info h2{font-size:2.4em;}
+	#header-info h2{font-size:2.4em; width:300px;}
 	#header-info h3{font-size:1em;}
-	
+	.pubdate,.entry-info h3{float:none;}
 }
 
 
